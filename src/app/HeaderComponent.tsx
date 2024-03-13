@@ -1,5 +1,5 @@
-const HeaderComponent = () => {
-  return <h1>Using Header Component V2</h1>;
+const SharedComponent = () => {
+  return <h1>This is a shared component</h1>;
 };
 
-export default HeaderComponent;
+export default SharedComponent;
