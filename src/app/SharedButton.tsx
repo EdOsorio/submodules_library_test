@@ -1,9 +1,10 @@
 import { MouseEventHandler } from 'react';
 
-const SharedButton = (
-  onClick: MouseEventHandler<HTMLButtonElement> | undefined
-) => {
-  return <button onClick={onClick}>Button Submodule 1</button>;
+interface props {
+  onClick: () => void;
+}
+const SharedButton = ({ onClick }: props) => {
+  return <button onClick={onClick}>Library Button</button>;
 };
 
 export default SharedButton;
